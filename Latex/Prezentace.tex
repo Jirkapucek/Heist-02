@@ -56,19 +56,39 @@
 \label{sec:uvod}
 
 \begin{frame}
-\begin{equation*}
-  \ddd{\theta}{t}
-  +
-  \left(
-    \frac{g}{l}
-    -
-    \frac{A \Omega^2}{l} \cos \left( \Omega t \right)
-  \right)
-  \theta
-  =
-  0
-  .
-\end{equation*}
+\begin{center}
+			Naší zkoumanou diferenciální rovnicí bude rovnice~\eqref{eq:9} též zvaná Mathieuova rovnice
+		\begin{equation}
+			\label{eq:9}
+			\ddd{\theta_{*}}{t_{*}}
+			+
+			\left(
+			\alpha
+			+
+			\beta \cos \left( t_{*} \right)
+			\right)
+			\theta
+			=
+			0
+			,
+		\end{equation}
+			pro nás konkrétně ve tvaru
+		\begin{equation}
+			\label{eq:10}
+			\ddd{\theta}{t}
+			+
+			\left(
+			\frac{g}{l}
+			-
+			\frac{A \Omega^2}{l} \cos \left( \Omega t \right)
+			\right)
+			\theta
+			=
+			0
+			,
+		\end{equation}
+			kde $\alpha=\frac{g}{l\Omega^2}=\frac{\omega_{o}^2}{\Omega_{o}^2}$, $ \beta=-\frac{A}{l}$ a $t_{*}=\Omega t$. Za parametry jsme volili $g=9.81$, $l=1$ a $A=0.2$. Jediný parametr, který jsme měnili, byla frekvence vybrace $\Omega$.
+		\end{center}
 \end{frame}
 
 \section{Animace}
