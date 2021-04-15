@@ -87,8 +87,19 @@
 			0
 			,
 		\end{equation}
-			kde $\alpha=\frac{g}{l\Omega^2}=\frac{\omega_{o}^2}{\Omega_{o}^2}$, $ \beta=-\frac{A}{l}$ a $t_{*}=\Omega t$. Za parametry jsme volili $g=9.81$, $l=1$,  $A=0.2$ a nefixní parametr $\Omega$.
+			kde $\alpha=\frac{g}{l\Omega^2}=\frac{\omega_{o}^2}{\Omega_{o}^2}$, $ \beta=-\frac{A}{l}$ a $t_{*}=\Omega t$. Za parametry jsme volili $g=9.81$, $l=1$,  $A=0.5$ a nefixní parametr $\Omega$.
 		\end{center}
+\end{frame}
+
+\begin{frame}
+	Z perturbační metody zjistíme podmínku stability kyvadla v horní poloze: 
+	\begin{equation*}
+		\frac{-\beta}{\sqrt{\alpha}}\geq \sqrt{2}
+	\end{equation*}
+	neboli:
+	\begin{equation*}
+	\frac{A}{l}\frac{\Omega}{\omega_{o}}\geq \sqrt{2}
+	\end{equation*}	
 \end{frame}
 
 \section{Animace}
@@ -96,19 +107,27 @@
 
 \begin{frame}
 \begin{center}
-\href{run:./animace.mp4}{Převrácené kyvadlo - stabilní}
+	Volme například $\Omega=5$ (ostatní parametry volíme dle str.2), pak je nerovnost splněna:
 \begin{equation*}
-3.19275 \geq \sqrt{2}
-\end{equation*}
+	3.19275 \geq \sqrt{2}
+\end{equation*}	
+	a podle teorie tyto podmínky vedou ke stabilizaci kyvadla v horní poloze, což potvrzuje i numerické řešení: 
+\\
+
+\href{run:./animace.mp4}{Převrácené kyvadlo - stabilní}
 \end{center}
 \end{frame}
 
 \begin{frame}
 \begin{center}
-\href{run:./animace2.mp4}{Převrácené kyvadlo - nestabilní}
+	Nyní naopak volme $\Omega=20$, pro které nerovnost splněna není:
 \begin{equation*}
 0.798189 \ngeq \sqrt{2}
 \end{equation*}
+	Podle teorie takto volená vstupní data nevedou k stabilizaci kyvadla v horní poloze. Numerickým řešením lze vidět, že teoretická předpověď nelže.
+\\
+
+\href{run:./animace2.mp4}{Převrácené kyvadlo - nestabilní}
 \end{center}
 \end{frame}
 
